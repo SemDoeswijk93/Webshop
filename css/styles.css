@@ -1,0 +1,128 @@
+:root {
+    --background-color: #ffffff;
+    --main-color: #00ffbf;
+    --secondary-color: #e1ff00;
+    --text-color: #000000;
+    --footer-color: #00640d;
+    --border-radius: 5px;
+    --ubuntu-font: 'Ubuntu', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: var(--background-color);
+}
+a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+header {
+    height: 100px;
+    display: flex;
+    background-color: var(--main-color);
+    border-radius: var(--border-radius);
+    font-family: var(--ubuntu-font);
+    font-size: 30px;
+    text-align: end;
+    align-items: center;
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+.nav-item{
+    padding: 10px;
+}
+
+main {
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+
+button {
+    background-color: var(--main-color);
+    border-radius: var(--border-radius);
+    border: none;
+    font-family: var(--ubuntu-font);
+    color: var(--text-color);
+    padding: 8px 12px;
+    width: 120px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+
+.cta {
+    width: 100%;
+    border: 1px;
+    position: relative;
+}
+
+.cta-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%)
+}
+
+.cta-button {
+    width: 130px;
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.cta-text {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    left: 100px;
+    color: white;
+    font: var(--ubuntu-font);
+    font-size: 250%;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: var(--ubuntu-font);
+    font-size: 30px;
+    border: 2px solid black;
+}
+
+.product-image {
+    width: 200px;
+    margin: 20px;
+
+}
+
+.arsenal-image {
+    width: 263px;
+    margin: 20px;
+}
+
+
+footer {
+    height: 500px;
+    background-color: var(--footer-color);
+    color: white;
+    border-radius: var(--border-radius);
+}
