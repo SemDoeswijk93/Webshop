@@ -13,6 +13,7 @@ function filterProducten(categorie) {
 const zoekbalk = document.getElementById('zoek');
 
 zoekbalk.addEventListener('input', function() {
+    console.log("asdf");
     const zoekterm = zoekbalk.value.toLowerCase();
     const producten = document.querySelectorAll('.product');
 
