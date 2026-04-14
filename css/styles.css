@@ -8,17 +8,20 @@
     --ubuntu-font: 'Ubuntu', sans-serif;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
+
 body {
     background-color: var(--background-color);
 }
-a{
+
+a {
     color: var(--text-color);
     text-decoration: none;
 }
+
 header {
     height: 100px;
     display: flex;
@@ -38,7 +41,8 @@ header {
         padding: 0;
     }
 }
-.nav-item{
+
+.nav-item {
     padding: 10px;
 }
 
@@ -62,6 +66,10 @@ button {
 
 button:hover {
     opacity: 0.85;
+}
+
+body {
+    font-family: var(--ubuntu-font);
 }
 
 

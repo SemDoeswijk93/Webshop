@@ -27,7 +27,7 @@ zoekbalk.addEventListener('input', function() {
     });
 });
 
-function addToCart(productname) {
+function addToCart(productname, price) {
     // Haal de huidige cart op, of begin met een lege array
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
 
@@ -42,11 +42,12 @@ function addToCart(productname) {
         // Nieuw Product, voeg het toe aan array
         cart.push ({
             name: productname, 
+            price: price,
             amount: 1 
         });
     }
 
 
     // Sla de bijgewerkte cart op 
-    localStorage.setItem('cart', JSON.stringify(cart));
+     localStorage.setItem('cart', JSON.stringify(cart));
 }
