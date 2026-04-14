@@ -17,9 +17,9 @@
     <header>
         <h1>Sem's Voetbal Shop</h1>
         <ul>
-            <li class="nav-item"><a href="#home">Home</a></li>
-            <li class="nav-item"><a href="Products">Products</a></li>
-            <li class="nav-item"><a href="#shoppingcart">Shopping Cart</a></li>
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="Products.html">Products</a></li>
+            <li class="nav-item"><a href="cart.html">Shopping Cart</a></li>
         </ul>
     </header>
 
@@ -40,34 +40,42 @@
     <section class="products">
 
         <article class="product" data-categorie="Eredivisie">
-            <img src="images/ajax.webp" class="product-image">
-            <h3 class="product-title">Ajax Thuis Shirt 25/26</h3>
-            <p>€90,00</p>
-            <button onclick="addToCart(this)">Bestel Hier</button>
+            <li class="product" data-categorie="Shirt" onclick="addToCart('Ajax Thuis Shirt 25/26')">
+                <img src="images/ajax.webp" class="product-image">
+                <h3 class="product-title">Ajax Thuis Shirt 25/26</h3>
+                <p>€90,00</p>
+                <button onclick="addToCart(this)">Bestel Hier</button>
+            </li>
         </article>
 
         <article class="product" data-categorie="La Liga">
-            <img src="images/barca 2122.webp" class="product-image">
-            <h3 class="product-title">Barcelona Thuis Shirt 21/22</h3>
-            <p>€50,00</p>
-            <button onclick="addToCart(this)">Bestel Hier</button>
+            <li class="product" data-categorie="Shirt" onclick="addToCart('Barcelona Thuis Shirt 21/22')">
+                <img src="images/barca 2122.webp" class="product-image">
+                <h3 class="product-title">Barcelona Thuis Shirt 21/22</h3>
+                <p>€50,00</p>
+                <button onclick="addToCart(this)">Bestel Hier</button>
+            </li>
         </article>
 
         <article class="product" data-categorie="Eredivisie">
-            <img src="images/NAC BREDA 0910.webp" class="product-image">
-            <h3 class="product-title">NAC Breda Thuis Shirt 09/10</h3>
-            <p>€42,00</p>
-            <button onclick="addToCart(this)">Bestel Hier</button>
+            <li class="product" data-categorie="Shirt" onclick="addToCart('NAC Breda Thuis Shirt 09/10')">
+                <img src="images/NAC BREDA 0910.webp" class="product-image">
+                <h3 class="product-title">NAC Breda Thuis Shirt 09/10</h3>
+                <p>€42,00</p>
+                <button onclick="addToCart(this)">Bestel Hier</button>
         </article>
 
         <article class="product" data-categorie="Premier League">
-            <img src="images/man utd ronaldo.webp" class="product-image">
-            <h3 class="product-title">Manchester United Ronaldo 22/23</h3>
-            <p>€74,00</p>
-            <button onclick="addToCart(this)">Bestel Hier</button>
+            <li class="product" data-categorie="Shirt" onclick="addToCart('Manchester United Ronaldo 22/23 Shirt')">
+                <img src="images/man utd ronaldo.webp" class="product-image">
+                <h3 class="product-title">Manchester United Ronaldo 22/23 Shirt</h3>
+                <p>€74,00</p>
+                <button onclick="addToCart(this)">Bestel Hier</button>
         </article>
 
         <article class="product" data-categorie="Danish Super League">
+                        <li class="product" data-categorie="Shirt"
+            onclick="addToCart('Brondby Uit Shirt 09/10')">
             <img src="images/brondby.webp" class="product-image">
             <h3 class="product-title">Brondby Uit Shirt 09/10</h3>
             <p>€25,00</p>
@@ -75,6 +83,8 @@
         </article>
 
         <article class="product" data-categorie="Premier League">
+            <li class="product" data-categorie="Shirt"
+            onclick="addToCart('Arsenal Thuis Shirt 25/26')">
             <img src="images/arsenal.webp" class="product-image">
             <h3 class="product-title">Arsenal Thuis Shirt 25/26</h3>
             <p>€99,99</p>
@@ -82,6 +92,8 @@
         </article>
 
         <article class="product" data-categorie="Eredivisie">
+                        <li class="product" data-categorie="Shirt"
+            onclick="addToCart('Ajax Uit Shirt 94/95')">
             <img src="images/ajax 9495.webp" class="product-image">
             <h3 class="product-title">Ajax Uit Shirt 94/95</h3>
             <p>€401,63</p>
@@ -89,6 +101,8 @@
         </article>
 
         <article class="product" data-categorie="Bundesliga">
+            <li class="product" data-categorie="Shirt"
+            onclick="addToCart('Bayern Thuis Shirt 22/23')">
             <img src="images/bayern2223.webp" class="product-image">
             <h3 class="product-title">Bayern Thuis Shirt 22/23</h3>
             <p>€35,00</p>
